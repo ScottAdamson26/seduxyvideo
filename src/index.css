@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Classes Layer */
+@layer utilities {
+  .gayGradient {
+    @apply bg-gradient-to-br from-customBlue-light to-customBlue;
+  }
+
+  .straightGradient {
+    @apply bg-gradient-to-r from-customPink-light to-customPink;
+  }
+
+  .transGradient {
+    @apply bg-gradient-to-br from-pink-200 via-purple-400 to-blue-300;
+  }
+}
